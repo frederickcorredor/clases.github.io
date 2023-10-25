@@ -1,0 +1,521 @@
+body{
+    margin: opx;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    padding: opx;
+    font-size: 19px;
+    background-color: rgb(231, 236, 241);
+}
+
+img{
+    width: 50%;
+}
+
+.banner{
+    background-color: rgb(255, 156, 35);
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: slategray 2px 2px 4px 2px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+span{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-align: right;
+    margin-left: 40%;
+}
+
+.coheteanimacion{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    animation: temblor 0.2s ease-in-out 0s infinite;
+}
+.cohete{position: absolute;
+    height: 350px;
+    transition: bottom 1s ease;
+    left: 40px;
+    bottom: 0px;
+}
+
+
+@keyframes despegue {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px); /* Puedes ajustar la distancia de ascenso */
+    }
+
+    40% {
+        transform: translateY(-15px); /* Puedes ajustar la distancia de ascenso */
+    }
+    100% {
+        transform: translateY(-1500px); /* Puedes ajustar la distancia de ascenso */
+    }
+}
+
+@keyframes temblor {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+h1,h3{
+    color: white;
+    text-align: center;
+    max-width: 450px;
+    margin-top: 20px;
+    text-shadow: #070707 1px 1px 1px ;
+}
+
+
+.flexbox img{
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: -30px;
+    overflow: hidden;
+    margin-top: -150px;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px;
+    margin-bottom: -10px;
+}
+
+.segmento1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin:10px;
+    padding:0px;
+    max-width: 700px;
+    border-radius: 24px;
+}
+
+.contenedor1{
+    background-color: dodgerblue;
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    box-shadow: rgb(1, 75, 150) 2px 2px 4px 2px;
+}
+
+.contenedor2{
+    background-color: rgb(255, 30, 154);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    box-shadow: rgb(170, 11, 109) 2px 2px 4px 2px;
+}
+.contenedor3{
+    background-color: rgb(184, 61, 255);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    box-shadow: rgb(83, 3, 150) 2px 2px 4px 2px;
+}
+.contenedor4{
+    background-color: rgb(3, 212, 31);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    box-shadow: rgb(8, 175, 22) 2px 2px 4px 2px;
+}
+.contenedor5{
+    background-color: rgb(55, 20, 252);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    padding-bottom: 4px;
+    box-shadow: rgb(3, 13, 155) 2px 2px 4px 2px;
+}
+.contenedor6{
+    background-color: rgb(250, 51, 24);
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 4px;
+    padding-bottom: 4px;
+    box-shadow: rgb(158, 11, 6) 2px 2px 4px 2px;
+}
+
+.nuevoflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexbox3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -10px;
+}
+
+.flexbox3 img{
+    width: 60%;
+    max-width: 500px;
+    margin-bottom: 0px;
+}
+
+
+
+.ventajas{
+    background-image: url(fondosegmento2.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 6px;
+    border-radius: 24px;
+    box-shadow: slategray 2px 2px 4px 2px;
+    max-width: 900px;
+
+}
+
+.frederick{
+        background-image: url(fondofrederick.webp);
+        background-attachment: fixed;
+        background-position: right top;
+        background-size: cover;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        margin:10px;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: slategray 2px 2px 4px 2px;
+        max-width: 400px;
+    }
+
+.frederick img{
+    text-align: center;
+}
+
+.fotoperfil{
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    margin: 2px;
+    animation: rotateCoin 30s infinite linear;
+}
+
+.fotoperfil img{
+    margin: 2px;
+    width: 200px;
+    border-radius: 100%;
+    border: 6px solid rgb(255, 156, 35);
+}
+
+@keyframes rotateCoin {
+    0%, 100% {
+        transform: rotateY(0deg);
+    }
+    20% {
+        transform: rotateY(0deg);
+    }
+    40% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(0deg);
+    }
+    60% {
+        transform: rotateY(0deg);
+    }
+    80% {
+        transform: rotateY(180deg);
+    }
+
+
+}
+
+.textoperfil{
+    width: 40%;
+    min-width: 300px;
+    margin: 4px;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.color1{
+    background-color: rgba(0, 0, 255, 0.616);
+    border-radius: 24px;
+
+}
+
+.color2{
+    background-color: rgba(0, 0, 255, 0.616);
+    border-radius: 24px;
+    padding: 10px;
+}
+
+.color{
+    background-color: rgba(0, 0, 255, 0.616);
+    padding: 100px 5px 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 24px;
+
+}
+
+
+.lista-animated {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-animated li {
+    color: #ffffff;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in-out, transform 2.5s ease-in-out;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.lista-animated li.active {
+    opacity: 1;
+    transform: scale(1.3);
+    color: rgb(255, 255, 255);
+    text-decoration-line:overline underline;
+}
+
+.contenedorsegmento2{
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    background-image: url(fondofrederick.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top right;
+    border-radius: 24px;
+    margin: 20px 10px;
+    max-width: 880px;
+}
+
+.contenedorsegmento2 h2{
+    margin: 6px;
+    padding: 10px 6px 10px 6px;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: #070707 1px 1px 1px ;
+
+}
+
+.segmento2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-content: center;
+    max-width: 800px;
+    border-radius: 24px;
+}
+
+.imagenfija{
+    text-align: center;
+}
+
+.imagenfija img{
+    min-width: 300px;
+}
+
+.segmento3{
+    background-color: rgb(255, 156, 35);
+    padding-bottom: 8px;
+    margin: 10px;
+    border-radius: 24px;
+}
+
+.segmento3 h3{
+    width: 90%;
+    max-width: 10000px;
+    font-size: 40px;
+    margin-top: 6px;
+    padding: 10px;
+    text-shadow: #070707 1px 1px 1px ;
+}
+
+.segmento3 p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.botondewasa button{
+    background-image: url(whatsapp.png);
+    background-size: cover;
+    background-position: center;
+    padding: 4px 14px 4px 65px;
+    border-radius: 20px;
+    box-shadow: #070707 6px 6px 6px;
+    color: white;
+    font-size: 35px;
+}
+
+#botonDespegue{
+    background-color: green;
+    color: white;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: solid 2 px white;
+    box-shadow: 6px 6px 6px black;
+    cursor: pointer;
+    animation: alternarTextoColor 1s infinite;
+}
+
+@keyframes alternarTextoColor {
+    0%, 100% {
+        background-color: green;
+        content: "¡Despegar!";
+    }
+    50% {
+        background-color: red;
+        content: "Clic aquí";
+    }
+}
+
+.botondewasa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.whatsapp{
+    cursor: pointer;
+    animation: heartbeat 5s infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+
+.contenedor-tarjeta {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.ladoa, .ladob {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.ladoa {
+    transform: rotateY(0deg);
+}
+
+.ladob {
+    transform: rotateY(180deg);
+    position: absolute;
+    bottom: 15px;
+}
+
+.ladob ul {
+    padding: 2px;
+    list-style-type: circle;
+    margin-left: 8px;
+    
+}
+
+
+.segmento1.animate .contenedor1,
+.segmento1.animate .contenedor2,
+.segmento1.animate .contenedor3,
+.segmento1.animate .contenedor4,
+.segmento1.animate .contenedor5,
+.segmento1.animate .contenedor6 {
+    opacity: 1; /* Al activar la animación, los divs se harán visibles */
+    transform: translateY(0); /* Al activar la animación, los divs volverán a su posición original */
+    transition-delay: 0.1s; /* Retraso para sincronizar la animación con el resaltado */
+}
+
+/* Configura la duración y el retardo de cada div */
+.segmento1.animate .contenedor1 {
+    animation: resaltar 0.7s ease-in-out 1s 1 normal forwards;
+}
+
+.segmento1.animate .contenedor2 {
+    animation: resaltar 0.7s ease-in-out 1.2s 1 normal forwards;
+}
+
+.segmento1.animate .contenedor3 {
+    animation: resaltar 0.7s ease-in-out 1.4s 1 normal forwards;
+}
+
+.segmento1.animate .contenedor4 {
+    animation: resaltar 0.7s ease-in-out 1.6s 1 normal forwards;
+}
+
+.segmento1.animate .contenedor5 {
+    animation: resaltar 0.7s ease-in-out 1.8s 1 normal forwards;
+}
+
+.segmento1.animate .contenedor6 {
+    animation: resaltar 0.7s ease-in-out 2s 1 normal forwards;
+}
+
+@keyframes resaltar {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.titulo3{
+    transition: transform 0.3s ease-in-out;
+}
+
+.animacion:hover {
+    transform: scale(1.1);
+}
